@@ -1,0 +1,57 @@
+<svg width="800" height="565" viewBox="0 0 800 565" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="marketingGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4" />
+      <stop offset="100%" stop-color="#34A853" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background border frame -->
+  <rect x="0" y="0" width="800" height="565" fill="#0d0d12" rx="10" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+  <rect x="15" y="15" width="770" height="535" fill="none" stroke="rgba(52, 168, 83, 0.2)" stroke-width="1" rx="8" />
+
+  <!-- Logo and Headers -->
+  <g transform="translate(100, 80)">
+    <!-- Google Digital Garage style logo -->
+    <rect x="0" y="0" width="12" height="12" fill="#4285F4" />
+    <rect x="16" y="0" width="12" height="12" fill="#EA4335" />
+    <rect x="0" y="16" width="12" height="12" fill="#FBBC05" />
+    <rect x="16" y="16" width="12" height="12" fill="#34A853" />
+    <text x="40" y="22" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="18" letter-spacing="1">Google Digital Garage</text>
+    <text x="0" y="60" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="11" letter-spacing="2">FUNDAMENTALS OF DIGITAL MARKETING CERTIFICATE</text>
+  </g>
+
+  <!-- Certificate Main Content -->
+  <g transform="translate(100, 200)">
+    <text x="0" y="0" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="14" font-weight="300">This is to acknowledge that</text>
+    <text x="0" y="45" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="36" letter-spacing="1">NISARG DOBARIYA</text>
+    <line x1="0" y1="65" x2="600" y2="65" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    
+    <text x="0" y="100" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="14" font-weight="300">has successfully completed the requirements for the course</text>
+    <text x="0" y="135" fill="#34A853" font-family="sans-serif" font-weight="800" font-size="22" filter="url(#glow)">Fundamentals of Digital Marketing</text>
+    <text x="0" y="165" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="12">Covering core marketing concepts, search engine optimization campaigns, online strategies,</text>
+    <text x="0" y="182" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="12">audience target analytics, and content metrics. Verified by Google.</text>
+  </g>
+
+  <!-- Footer, Signatures, and Seal -->
+  <g transform="translate(100, 440)">
+    <!-- Signature Left -->
+    <line x1="0" y1="30" x2="160" y2="30" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <text x="80" y="48" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="10" text-anchor="middle">AUTHORIZED SIGNATURE</text>
+    <text x="80" y="20" fill="#4285F4" font-family="cursive" font-size="14" text-anchor="middle" opacity="0.8">Google Garage Team</text>
+    
+    <!-- Code ID Right -->
+    <text x="600" y="25" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10" text-anchor="end">CERTIFICATE ID: S33 HTY G52</text>
+    <text x="600" y="45" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10" text-anchor="end">DATE GRANTED: 25/07/2022</text>
+
+    <!-- Badge Center -->
+    <g transform="translate(320, -30)">
+      <circle cx="30" cy="30" r="32" fill="rgba(52,168,83,0.05)" stroke="url(#marketingGlow)" stroke-width="2" />
+      <polygon points="30,8 35,22 48,22 38,30 42,42 30,34 18,42 22,30 12,22 25,22" fill="#34A853" filter="url(#glow)" />
+    </g>
+  </g>
+</svg>

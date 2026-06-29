@@ -1,0 +1,59 @@
+<svg width="800" height="565" viewBox="0 0 800 565" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="awsGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9900" />
+      <stop offset="100%" stop-color="#ffcc00" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background border frame -->
+  <rect x="0" y="0" width="800" height="565" fill="#0d0d12" rx="10" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+  <rect x="15" y="15" width="770" height="535" fill="none" stroke="rgba(255, 153, 0, 0.2)" stroke-width="1" rx="8" />
+
+  <!-- Background visual decoration -->
+  <circle cx="700" cy="450" r="100" fill="none" stroke="rgba(255, 153, 0, 0.02)" stroke-width="8" />
+
+  <!-- Logo and Headers -->
+  <g transform="translate(100, 80)">
+    <!-- Custom AWS logo mock (a smile arc under text) -->
+    <text x="0" y="22" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="22" letter-spacing="1">aws</text>
+    <path d="M 5,28 Q 20,38 35,28" stroke="#ff9900" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
+    <polygon points="35,28 32,24 38,26" fill="#ff9900" />
+    
+    <text x="0" y="60" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="11" letter-spacing="2">INFRASTRUCTURE ARCHITECTURE VERIFIED CREDENTIAL</text>
+  </g>
+
+  <!-- Certificate Main Content -->
+  <g transform="translate(100, 200)">
+    <text x="0" y="0" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="14" font-weight="300">This certifies that cloud computing infrastructure training was achieved by</text>
+    <text x="0" y="45" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="36" letter-spacing="1">NISARG DOBARIYA</text>
+    <line x1="0" y1="65" x2="600" y2="65" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    
+    <text x="0" y="100" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="14" font-weight="300">establishing deep architectural validation for AWS environments in</text>
+    <text x="0" y="135" fill="url(#awsGlow)" font-family="sans-serif" font-weight="800" font-size="22" filter="url(#glow)">AWS Core Architect Fundamentals</text>
+    <text x="0" y="165" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="12">Demonstrating practical knowledge of VPC configurations, IAM secure groups, EC2 scaling layers,</text>
+    <text x="0" y="182" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="12">S3 bucket policies, serverless Lambda executions, and cloud defense frameworks.</text>
+  </g>
+
+  <!-- Footer, Signatures, and AWS orange Seal -->
+  <g transform="translate(100, 440)">
+    <!-- Signature Left -->
+    <line x1="0" y1="30" x2="160" y2="30" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <text x="80" y="48" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="10" text-anchor="middle">CLOUD VERIFIER</text>
+    <text x="80" y="20" fill="#ff9900" font-family="cursive" font-size="16" text-anchor="middle" opacity="0.8">AWS Training Partner</text>
+    
+    <!-- Code ID Right -->
+    <text x="600" y="25" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10" text-anchor="end">AWS-VERIFY: AWS-ARCH-78192</text>
+    <text x="600" y="45" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10" text-anchor="end">ISSUED ON: MARCH 2024</text>
+
+    <!-- Badge Center -->
+    <g transform="translate(320, -30)">
+      <circle cx="30" cy="30" r="32" fill="rgba(255,153,0,0.05)" stroke="url(#awsGlow)" stroke-width="2" />
+      <path d="M 22,25 L 30,15 L 38,25 L 34,42 L 26,42 Z" fill="url(#awsGlow)" filter="url(#glow)" />
+    </g>
+  </g>
+</svg>

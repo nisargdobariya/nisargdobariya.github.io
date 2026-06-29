@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nisarg Dobariya | Cyber Security Analyst &amp; Penetration Tester</title>
+  <meta name="description"
+    content="Portfolio of Nisarg Dobariya - Computer Engineering Graduate, Cyber Security Analyst &amp; Penetration Tester. Explore interactive journey, projects, skills, and research.">
+
+  <!-- SEO & Social Meta Tags -->
+  <meta property="og:title" content="Nisarg Dobariya | Cyber Security Analyst &amp; Penetration Tester">
+  <meta property="og:description"
+    content="Explore the cinematic interactive portfolio of Nisarg Dobariya. Specialized in threat intelligence, vulnerability assessment, penetration testing, and security analysis.">
+  <meta property="og:type" content="website">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/index.css?v=1.0.4">
+</head>
+
+<body>
+
+  <!-- Custom Cinematic Overlays -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="vignette-overlay"></div>
+  <div class="grain-noise"></div>
+  <div id="cursor-glow"></div>
+  <div id="custom-cursor">$</div>
+
+  <!-- Header Navigation -->
+  <header>
+    <a href="#" class="logo" id="header-logo">
+      NISARG <span>SEC_</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+      <i data-lucide="menu"></i>
+    </button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#about" id="nav-lnk-about">About</a></li>
+        <li><a href="#journey" id="nav-lnk-journey">Journey</a></li>
+        <li><a href="#skills" id="nav-lnk-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-lnk-projects">Projects</a></li>
+        <li><a href="#research" id="nav-lnk-research">Research</a></li>
+        <li><a href="#experience" id="nav-lnk-experience">Experience</a></li>
+        <li><a href="#certificates" id="nav-lnk-certs">Certificates</a></li>
+        <li><a href="#contact" id="nav-lnk-contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme"
+            style="background: none; border: none; color: var(--text-gray); display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; cursor: pointer;">
+            <i data-lucide="sun" style="width: 20px; height: 20px;"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="app-container">
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="floating-elements">
+        <div class="floating-obj" style="top: 15%; left: 10%; width: 100px; height: 100px;" data-speed="0.05">
+          <i data-lucide="shield-alert" style="width: 24px; height: 24px; opacity: 0.15;"></i>
+        </div>
+        <div class="floating-obj" style="top: 25%; right: 15%; width: 120px; height: 120px;" data-speed="-0.03">
+          <span style="font-size: 0.7rem; opacity: 0.15; font-family: var(--font-mono);">&lt;sys_sec&gt;</span>
+        </div>
+        <div class="floating-obj" style="bottom: 20%; left: 20%; width: 80px; height: 80px;" data-speed="0.04">
+          <i data-lucide="terminal" style="width: 20px; height: 20px; opacity: 0.15;"></i>
+        </div>
+        <div class="floating-obj" style="bottom: 30%; right: 25%; width: 90px; height: 90px;" data-speed="-0.05">
+          <span style="font-size: 0.7rem; opacity: 0.15; font-family: var(--font-mono);">&gt;_ docker run</span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-subtitle">
+          <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
+          <span class="mono">Handshake Initialized... Connection Secure</span>
+        </div>
+        <h1 class="hero-title" id="hero-typewriter-title">
+          <!-- Populated by JS -->
+          <span class="glow-gradient-text">Hello.</span>
+        </h1>
+        <p class="hero-desc" id="hero-desc-text">
+          Computer Engineering graduate specializing in threat analysis, vulnerability assessments, penetration testing,
+          and secure system defenses. Welcome to the security workspace.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+            <span>Explore Systems</span>
+            <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-btn-connect">
+            <span>Access Shell</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="section-title-wrap">
+        <span class="section-label mono">01 // INTRODUCTION</span>
+        <h2 class="section-title glow-gradient-text">Design for Resilience.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-cards">
+          <div class="glass-card about-card">
+            <div class="hover-glow"></div>
+            <i data-lucide="cpu"></i>
+            <h3>Computer Engineer</h3>
+            <p>Trained in systems programming, computer network protocols, operating systems architectures, and logical
+              algorithms.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="hover-glow"></div>
+            <i data-lucide="fingerprint"></i>
+            <h3>Cyber Security Analyst</h3>
+            <p>Focused on network packet monitoring, log audit reviews, defense-in-depth policies, threat intelligence,
+              and OWASP modeling.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="hover-glow"></div>
+            <i data-lucide="shield-alert"></i>
+            <h3>Threat Hunter &amp; Analyst</h3>
+            <p>Fascinated by network intrusion alerts, analyzing system log repositories, and hunting indicators of
+              compromise.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="hover-glow"></div>
+            <i data-lucide="terminal"></i>
+            <h3>Penetration Tester</h3>
+            <p>Practicing active vulnerability exploitation, OWASP Top 10 auditing, network port scanning, and Capture
+              The Flag (CTF) environments.</p>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Published Research Papers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="11">0</div>
+            <div class="stat-label">Technical Certificates</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="30">0</div>
+            <div class="stat-label">Technologies Learned</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY SECTION -->
+    <section id="journey">
+      <div class="section-title-wrap">
+        <span class="section-label mono">02 // CHRONOLOGY</span>
+        <h2 class="section-title glow-gradient-text">My Journey Timeline</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress" id="timeline-scroll-bar"></div>
+
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">2020 - 2023</span>
+            <h3 class="timeline-title">Diploma in Computer Engineering</h3>
+            <p>B &amp; B Institute of Technology, Anand. Started in 2020 and completed in May 2023. Discovered assembly
+              languages, structural networking basics, database modeling, and low-level engineering paradigms.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">2023 - 2026</span>
+            <h3 class="timeline-title">B.Tech in Computer Engineering</h3>
+            <p>Charotar University of Science and Technology (CHARUSAT), Anand. Started in August 2023 and graduated in
+              April 2026. Expanded conceptual engineering, advanced operating systems, distributed architectures,
+              network design, and security protocols.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">Oct 2024</span>
+            <h3 class="timeline-title">International Conference &amp; Research Paper</h3>
+            <p>Co-authored and presented "SQL Injection Discovery and Deterrence Techniques for Web Applications" at
+              Manchester Metropolitan University, UK (presented at ICCCNet-2024).</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">May 2025 - Jun 2025</span>
+            <h3 class="timeline-title">Cyber Security Intern - Elevate Labs</h3>
+            <p>Performed configuration audits, vulnerability analysis, and security reviews. Awarded "Best Performer" by
+              the corporate founders for exceptional contributions.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">Aug 2025 - Jan 2026</span>
+            <h3 class="timeline-title">SOC Analyst Intern - Zeronsec India</h3>
+            <p>Gained hands-on exposure to Security Operations Center workflows, threat monitoring, traffic flow logs
+              analytics, and SIEM infrastructure setups.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">Jan 2026 - Present</span>
+            <h3 class="timeline-title">VAPT Intern - Cybersecurity Umbrella</h3>
+            <p>Conducting end-to-end vulnerability assessment and penetration testing in simulated environments, using
+              Metasploit, Nmap, and Kali Linux to capture flags.</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="hover-glow"></div>
+            <span class="timeline-date">Current Goal</span>
+            <h3 class="timeline-title">Cyber Security Analyst &amp; Penetration Tester</h3>
+            <p>Actively applying defensive engineering, security logging, threat hunting, and vulnerability exploitation
+              methodologies. Seeking opportunities to trace threat patterns and execute rigorous security penetration
+              scans on enterprise networks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="section-title-wrap">
+        <span class="section-label mono">03 // EXPERTISE</span>
+        <h2 class="section-title glow-gradient-text">Technical Matrix</h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skills-info">
+          <p>Drag and orbit the 3D grid sphere to map out my primary capabilities. Click filter categories below to
+            isolate distinct nodes in real time.</p>
+
+          <div class="skills-categories">
+            <button class="skill-category-btn active" data-category="all">All Modules</button>
+            <button class="skill-category-btn" data-category="cybersecurity">Cybersecurity</button>
+            <button class="skill-category-btn" data-category="infrastructure">Infrastructure</button>
+            <button class="skill-category-btn" data-category="programming">Programming</button>
+            <button class="skill-category-btn" data-category="os">OS & Networks</button>
+            <button class="skill-category-btn" data-category="databases">Databases</button>
+            <button class="skill-category-btn" data-category="soft-skills">Soft Skills</button>
+          </div>
+
+          <div class="skills-list" id="skills-badge-list">
+            <!-- Dynamic populating list of badges for responsive view -->
+            <div class="skill-badge" data-category="programming">C</div>
+            <div class="skill-badge" data-category="programming">C++</div>
+            <div class="skill-badge" data-category="programming">Java</div>
+            <div class="skill-badge" data-category="programming">Python</div>
+            <div class="skill-badge" data-category="programming">HTML &amp; CSS</div>
+            <div class="skill-badge" data-category="programming">PHP</div>
+            <div class="skill-badge" data-category="programming">ASP.NET</div>
+            <div class="skill-badge" data-category="programming">SQL</div>
+
+            <div class="skill-badge" data-category="cybersecurity">Wireshark</div>
+            <div class="skill-badge" data-category="cybersecurity">Nmap</div>
+            <div class="skill-badge" data-category="cybersecurity">Hashcat</div>
+            <div class="skill-badge" data-category="cybersecurity">Hydra</div>
+            <div class="skill-badge" data-category="cybersecurity">Burpsuite</div>
+            <div class="skill-badge" data-category="cybersecurity">Metasploit</div>
+            <div class="skill-badge" data-category="cybersecurity">OpenVAS</div>
+            <div class="skill-badge" data-category="cybersecurity">Nessus</div>
+
+            <div class="skill-badge" data-category="infrastructure">SOC Operations</div>
+            <div class="skill-badge" data-category="infrastructure">VAPT Scans</div>
+            <div class="skill-badge" data-category="infrastructure">Log Analysis</div>
+            <div class="skill-badge" data-category="infrastructure">Threat Detection</div>
+
+            <div class="skill-badge" data-category="os">Kali Linux</div>
+            <div class="skill-badge" data-category="os">Linux Hardening</div>
+            <div class="skill-badge" data-category="os">Windows Server</div>
+            <div class="skill-badge" data-category="os">Active Directory</div>
+
+            <div class="skill-badge" data-category="databases">SQL</div>
+            <div class="skill-badge" data-category="databases">Oracle</div>
+            <div class="skill-badge" data-category="databases">Firebase</div>
+
+            <div class="skill-badge" data-category="soft-skills">Analytical Thinking</div>
+            <div class="skill-badge" data-category="soft-skills">Academic Research</div>
+            <div class="skill-badge" data-category="soft-skills">Problem Solving</div>
+            <div class="skill-badge" data-category="soft-skills">Team Communication</div>
+            <div class="skill-badge" data-category="soft-skills">Continuous Learning</div>
+          </div>
+        </div>
+
+        <div class="skills-orbit-canvas-wrap">
+          <canvas id="orbit-canvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="section-title-wrap">
+        <span class="section-label mono">04 // PORTFOLIO</span>
+        <h2 class="section-title glow-gradient-text">Featured Implementations</h2>
+      </div>
+
+      <div class="projects-container">
+
+        <!-- Project 1 (Main Project: TorTalk) -->
+        <div class="project-item animate-project">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <span class="project-tag">Onion Routing</span>
+              <span class="project-tag">P2P Network</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">TorTalk P2P Anonymous Chat</h3>
+            <p class="project-desc">A decentralized peer-to-peer messaging application routing traffic through Tor onion
+              services. It ensures end-to-end encryption, metadata privacy, and domain masking to establish completely
+              secure communication links without central servers.</p>
+            <div class="project-stats-grid">
+              <div class="project-stat">
+                <h4>Routing Security</h4>
+                <p>Multi-hop Tor onion routing nodes.</p>
+              </div>
+              <div class="project-stat">
+                <h4>Encryption</h4>
+                <p>End-to-End asymmetric cryptography keys.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nisargdobariya/TorTalk" target="_blank" class="btn btn-secondary mono"
+                style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px;"></i>
+                <span>Repository</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-showcase">
+            <div class="project-badge-overlay">TorTalk_P2P</div>
+            <div class="project-mockup">
+              <img src="assets/project_tortalk.svg" alt="TorTalk P2P Onion Messenger Graphic UI">
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <span class="project-tag">VAPT Scan</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">SecAudit</span>
+            </div>
+            <h3 class="project-title">Basic Vulnerability Scanner</h3>
+            <p class="project-desc">A security auditing tool designed to scan web servers, crawl directories, trace open
+              ports, check for SSL status anomalies, and test endpoints against common injection vectors (like SQLi and
+              XSS).</p>
+            <div class="project-stats-grid">
+              <div class="project-stat">
+                <h4>Vulnerability Coverage</h4>
+                <p>OWASP Top 10 port and directory sweeps.</p>
+              </div>
+              <div class="project-stat">
+                <h4>Automated Engine</h4>
+                <p>Multi-threaded parsing with formatted reporting.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nisargdobariya/Basic_Vulnerability_Scanner" target="_blank"
+                class="btn btn-secondary mono" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px;"></i>
+                <span>Codebase</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-showcase">
+            <div class="project-badge-overlay">Sec_Scanner.py</div>
+            <div class="project-mockup">
+              <img src="assets/project_vuln_scanner.png" alt="Vulnerability Scanner Interface">
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-number">03</span>
+              <span class="project-tag">SQL Database</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Healthcare IT</span>
+            </div>
+            <h3 class="project-title">Blood Bank Management System</h3>
+            <p class="project-desc">An administrative database management platform designed to catalog donor histories,
+              coordinate emergency transfusion volumes, track blood components inventory levels, and manage hospital
+              supply requests.</p>
+            <div class="project-stats-grid">
+              <div class="project-stat">
+                <h4>Data Integrity</h4>
+                <p>Strict foreign key constraints and audit tables.</p>
+              </div>
+              <div class="project-stat">
+                <h4>Operations</h4>
+                <p>Interactive status dashboard for low stock warnings.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nisargdobariya/Blood-Bank-Management-System" target="_blank"
+                class="btn btn-secondary mono" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px;"></i>
+                <span>Repository</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-showcase">
+            <div class="project-badge-overlay">BloodBank_DB</div>
+            <div class="project-mockup">
+              <img src="assets/project_blood_bank.svg" alt="Blood Bank System Dashboard">
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-number">04</span>
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3 class="project-title">Restaurant Management System</h3>
+            <p class="project-desc">A complete business operations engine featuring role-based privileges (Admin,
+              Kitchen, Billing), interactive order tracking tables, menu administration panel, and automated bill
+              receipt generation.</p>
+            <div class="project-stats-grid">
+              <div class="project-stat">
+                <h4>User Privileges</h4>
+                <p>Secured multi-role access verification.</p>
+              </div>
+              <div class="project-stat">
+                <h4>Database</h4>
+                <p>Transactional MySQL queries with inputs sanitization.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nisargdobariya/Restaurant-Management-System" target="_blank"
+                class="btn btn-secondary mono" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px;"></i>
+                <span>Codebase</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-showcase">
+            <div class="project-badge-overlay">Restaurant_POS</div>
+            <div class="project-mockup">
+              <img src="assets/project_restaurant.svg" alt="Restaurant POS System Admin Panel">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section id="research">
+      <div class="section-title-wrap">
+        <span class="section-label mono">05 // SCHOLARLY</span>
+        <h2 class="section-title glow-gradient-text">Research Publications</h2>
+      </div>
+
+      <div class="research-grid">
+        <div class="research-info">
+          <div class="research-meta-tags">
+            <span class="research-meta-tag">Manchester Metropolitan Univ.</span>
+            <span class="research-meta-tag">SQL Injection</span>
+            <span class="research-meta-tag">Smart Grid Security</span>
+          </div>
+          <h3 class="research-paper-title">Co-authored Anomaly Detection and Deterrence Research</h3>
+          <p>Investigated advanced defensive computing topics. Primary publications focus on hybrid SQL Injection
+            detection engines and evaluating intrusion machine learning models inside smart grid systems.</p>
+
+          <div class="research-tabs-nav">
+            <button class="research-tab-btn active" data-tab="sqli">SQL Injection Paper</button>
+            <button class="research-tab-btn" data-tab="grid">Smart Grid IDS</button>
+          </div>
+
+          <div class="research-tabs-content">
+            <div class="research-tab-pane active" id="tab-sqli">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">SQL Injection Discovery and Deterrence
+                Techniques for Web Applications</h4>
+              <p style="margin-bottom: 0.75rem; font-size: 0.9rem; color: var(--accent-cyan);">Presented at
+                ICCCNet-2024, Manchester, United Kingdom</p>
+              <p>Proposed a hybrid detection model combining Longest Common Subsequence (LCS) string matching, active
+                query runtime monitoring, and intelligent classification. This approach achieves superior detection
+                accuracy and deters injection vectors before database execution.</p>
+            </div>
+            <div class="research-tab-pane" id="tab-grid">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Intrusion Detection in Smart Grid
+                Communication</h4>
+              <p style="margin-bottom: 0.75rem; font-size: 0.9rem; color: var(--accent-cyan);">An analysis of IDS Models
+                and Datasets</p>
+              <p>Evaluated the suitability of cybersecurity datasets (NSL-KDD, CICIDS) for training machine learning
+                algorithms to detect anomalies in smart grids. Highlighted telemetry packet fuzzing and protocol
+                manipulation vulnerabilities in regional substations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-visual">
+          <div class="research-paper-stack">
+            <div class="research-paper-sheet">
+              <div class="paper-header">
+                <span class="paper-logo">ICCCNET / MANCHESTER</span>
+                <h4 class="paper-title-mock">SQL Injection Discovery and Deterrence</h4>
+              </div>
+              <div class="paper-body-mock">
+                <div class="paper-line glow"></div>
+                <div class="paper-line medium"></div>
+                <div class="paper-line"></div>
+                <div class="paper-line short"></div>
+                <div class="paper-line glow"></div>
+                <div class="paper-line"></div>
+                <div class="paper-line medium"></div>
+              </div>
+              <div class="paper-footer">
+                <span class="paper-pages">Page 1 of 6</span>
+                <i data-lucide="file-text" style="width: 16px; height: 16px; color: var(--accent-cyan);"></i>
+              </div>
+              <div class="paper-abstract-glow"></div>
+            </div>
+            <div class="research-paper-sheet"></div>
+            <div class="research-paper-sheet"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="section-title-wrap">
+        <span class="section-label mono">06 // WORK HISTORY</span>
+        <h2 class="section-title glow-gradient-text">Practical Experience</h2>
+      </div>
+
+      <div class="experience-list">
+
+        <!-- Exp Card 1 -->
+        <div class="glass-card experience-card active" data-exp="1">
+          <div class="hover-glow"></div>
+          <div class="experience-header-wrap">
+            <div class="experience-title-box">
+              <h3>VAPT Intern</h3>
+              <div class="experience-company">
+                <i data-lucide="shield-alert" style="width: 14px; height: 14px;"></i>
+                <span>Cybersecurity Umbrella</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+              <span class="experience-date">Jan 2026 - Present</span>
+              <i data-lucide="chevron-down" class="experience-toggle-icon"></i>
+            </div>
+          </div>
+
+          <div class="experience-body">
+            <div class="experience-content">
+              <ul class="experience-responsibilities">
+                <li>Performed end-to-end Vulnerability Assessment and Penetration Testing in a controlled lab,
+                  identifying outdated services and weak configurations.</li>
+                <li>Tested and exploited vulnerabilities (such as insecure protocols and credentials flaws) using Nmap,
+                  Metasploit, and Kali Linux.</li>
+                <li>Solved Capture The Flag (CTF) challenges on platforms like TryHackMe and picoCTF to strengthen
+                  enumeration and privilege escalation.</li>
+                <li>Appeared for the CERT-IN OLPST Level 2 VAPT Exam, gaining exposure to business logic flaws and VAPT
+                  methodologies.</li>
+              </ul>
+              <div class="experience-tech-tags">
+                <span class="experience-tech-tag">VAPT Scans</span>
+                <span class="experience-tech-tag">Nmap</span>
+                <span class="experience-tech-tag">Metasploit</span>
+                <span class="experience-tech-tag">Kali Linux</span>
+                <span class="experience-tech-tag">CTFs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp Card 2 -->
+        <div class="glass-card experience-card" data-exp="2">
+          <div class="hover-glow"></div>
+          <div class="experience-header-wrap">
+            <div class="experience-title-box">
+              <h3>SOC Analyst Intern</h3>
+              <div class="experience-company">
+                <i data-lucide="server" style="width: 14px; height: 14px;"></i>
+                <span>Zeronsec India Pvt. Ltd.</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+              <span class="experience-date">Aug 2025 - Jan 2026</span>
+              <i data-lucide="chevron-down" class="experience-toggle-icon"></i>
+            </div>
+          </div>
+
+          <div class="experience-body">
+            <div class="experience-content">
+              <ul class="experience-responsibilities">
+                <li>Gained hands-on exposure to Security Operations Center (SOC) logs monitoring, analysis, and SIEM
+                  concepts.</li>
+                <li>Analyzed traffic flow and network alerts using OSI/TCP-IP fundamentals.</li>
+                <li>Configured and worked in Linux and Windows Server environments to analyze network logs.</li>
+                <li>Identified malicious patterns and assisted in incident response workflows.</li>
+              </ul>
+              <div class="experience-tech-tags">
+                <span class="experience-tech-tag">SOC Monitor</span>
+                <span class="experience-tech-tag">SIEM logs</span>
+                <span class="experience-tech-tag">Wireshark</span>
+                <span class="experience-tech-tag">Linux</span>
+                <span class="experience-tech-tag">Windows Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp Card 3 -->
+        <div class="glass-card experience-card" data-exp="3">
+          <div class="hover-glow"></div>
+          <div class="experience-header-wrap">
+            <div class="experience-title-box">
+              <h3>Cyber Security Intern</h3>
+              <div class="experience-company">
+                <i data-lucide="shield" style="width: 14px; height: 14px;"></i>
+                <span>Elevate Labs</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+              <span class="experience-date">May 2025 - June 2025</span>
+              <i data-lucide="chevron-down" class="experience-toggle-icon"></i>
+            </div>
+          </div>
+
+          <div class="experience-body">
+            <div class="experience-content">
+              <ul class="experience-responsibilities">
+                <li>Successfully completed real-world tasks involving security audits and vulnerability mapping.</li>
+                <li>Demonstrated exceptional analytical thinking and dedication during the 1-month program.</li>
+                <li>Awarded "Best Performer" certificate by the founders for outstanding contributions.</li>
+              </ul>
+              <div class="experience-tech-tags">
+                <span class="experience-tech-tag">Security Audit</span>
+                <span class="experience-tech-tag">Threat Mapping</span>
+                <span class="experience-tech-tag">Best Performer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates">
+      <div class="section-title-wrap">
+        <span class="section-label mono">07 // ACCREDITATION</span>
+        <h2 class="section-title glow-gradient-text">Verified Achievements</h2>
+      </div>
+
+      <div class="certificates-grid">
+
+        <!-- Cert Card 1 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_cybersecurity.svg"
+          data-cert-title="Foundations of Cybersecurity" data-cert-issuer="Google on Coursera"
+          data-cert-pdf="assets/NISARG_CS_Certificate.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">COURSERA / GOOGLE</span>
+            <i data-lucide="shield" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">Foundations of Cybersecurity</h3>
+          <span class="certificate-date-bottom">Completed March 2024</span>
+        </div>
+
+        <!-- Cert Card 2 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_thm_pre_security.svg"
+          data-cert-title="Pre Security Learning Path" data-cert-issuer="TryHackMe"
+          data-cert-pdf="assets/THM-PRE-SECURITY.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">TRYHACKME</span>
+            <i data-lucide="network" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">Pre Security Learning Path Completion</h3>
+          <span class="certificate-date-bottom">Completed January 2026</span>
+        </div>
+
+        <!-- Cert Card 3 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_apisec.svg"
+          data-cert-title="API Security Fundamentals '25" data-cert-issuer="APIsec University"
+          data-cert-pdf="assets/API_Security_Fundamentals.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">APISEC UNIVERSITY</span>
+            <i data-lucide="key" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">API Security Fundamentals Certification</h3>
+          <span class="certificate-date-bottom">Completed May 2026</span>
+        </div>
+
+        <!-- Cert Card 4 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_mastercard.svg"
+          data-cert-title="Cybersecurity Job Simulation" data-cert-issuer="MasterCard / Forage"
+          data-cert-pdf="assets/Master_Card_CyberSecurity_Job_Simulation.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">MASTERCARD / FORAGE</span>
+            <i data-lucide="award" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">MasterCard Cybersecurity Job Simulation</h3>
+          <span class="certificate-date-bottom">Completed May 2025</span>
+        </div>
+
+        <!-- Cert Card 5 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_deloitte.svg"
+          data-cert-title="Cyber Job Simulation" data-cert-issuer="Deloitte / Forage"
+          data-cert-pdf="assets/Deloitte_Cyber_Job_Simulation.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">DELOITTE / FORAGE</span>
+            <i data-lucide="award" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">Deloitte Cybersecurity Job Simulation</h3>
+          <span class="certificate-date-bottom">Completed June 2025</span>
+        </div>
+
+        <!-- Cert Card 6 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_code_unnati.svg"
+          data-cert-title="Emerging Technologies Course" data-cert-issuer="SAP Code Unnati / Edunet"
+          data-cert-pdf="assets/Nisarg Dobariya_AC.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">SAP &amp; EDUNET</span>
+            <i data-lucide="cpu" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">SAP Code Unnati Emerging Tech Program</h3>
+          <span class="certificate-date-bottom">Completed 2025</span>
+        </div>
+
+        <!-- Cert Card 7 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_python.svg"
+          data-cert-title="The Joy of Computing using Python" data-cert-issuer="NPTEL / IIT Madras"
+          data-cert-pdf="assets/The_Joy_of_Computing_using_Python.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">NPTEL / IIT MADRAS</span>
+            <i data-lucide="terminal" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">NPTEL Python Course (Score: 68%)</h3>
+          <span class="certificate-date-bottom">Completed April 2024</span>
+        </div>
+
+        <!-- Cert Card 8 -->
+        <div class="glass-card certificate-card" data-cert-img="assets/cert_elevatelabs.svg"
+          data-cert-title="Cyber Security Internship (Best Performer)" data-cert-issuer="Elevate Labs"
+          data-cert-pdf="assets/ElevateLabs_Internship_Certificate.pdf">
+          <div class="hover-glow"></div>
+          <div class="certificate-top">
+            <span class="certificate-issuer">ELEVATE LABS</span>
+            <i data-lucide="shield" class="certificate-badge-icon"></i>
+          </div>
+          <h3 class="certificate-title">Cyber Security Internship Program</h3>
+          <span class="certificate-date-bottom">Completed June 2025</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECH STACK FLOATING ICONS -->
+    <section id="tech-stack">
+      <div class="section-title-wrap">
+        <span class="section-label mono">08 // COMPILERS & ENGINES</span>
+        <h2 class="section-title glow-gradient-text">Core Infrastructure Stack</h2>
+      </div>
+
+      <div class="tech-stack-wrap" id="icon-storm-wrap">
+        <div class="floating-icon-container" id="icon-storm-container">
+
+          <!-- Dynamic positioning using javascript. We'll specify fallback positions or let JS construct coordinates -->
+          <div class="floating-tech-icon" style="top: 20%; left: 15%;">
+            <div class="tech-icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linux">
+                <path d="M12 2C8.5 2 7 5.5 7 8c0 .5-.1 1.2-.3 1.8-.2.6-.7 1.2-1.7 1.2-.5 0-1 .2-1 .7s.3.8.8.8c1 0 1.8-.6 2.2-1.5.2.5.4 1 .7 1.5C6 14.5 5 16 5 18c0 .6.4 1 1 1 1.5 0 2.5-1 3.5-2.5.8.5 1.7.5 2.5 0 1 1.5 2 2.5 3.5 2.5.6 0 1-.4 1-1 0-2-1-3.5-2.7-5.5.3-.5.5-1 .7-1.5.4.9 1.2 1.5 2.2 1.5.5 0 .8-.3.8-.8s-.5-.7-1-.7c-1 0-1.5-.6-1.7-1.2-.2-.6-.3-1.3-.3-1.8 0-2.5-1.5-6-5-6z"></path>
+                <path d="M9 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                <path d="M15 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                <path d="M12 13c-1.5 0-2-1-2-1h4s-.5 1-2 1z"></path>
+              </svg>
+            </div>
+            <span class="tech-icon-name">Linux OS</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 15%; left: 45%;">
+            <div class="tech-icon-circle"><i data-lucide="container" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">Docker</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 25%; left: 75%;">
+            <div class="tech-icon-circle"><i data-lucide="git-branch" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">Git</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 50%; left: 10%;">
+            <div class="tech-icon-circle"><i data-lucide="server" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">VMware</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 45%; left: 80%;">
+            <div class="tech-icon-circle"><i data-lucide="code-2" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">C++</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 75%; left: 25%;">
+            <div class="tech-icon-circle"><i data-lucide="shield-check" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">Active Directory</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 70%; left: 55%;">
+            <div class="tech-icon-circle"><i data-lucide="database" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">MySQL</span>
+          </div>
+          <div class="floating-tech-icon" style="top: 55%; left: 40%;">
+            <div class="tech-icon-circle"><i data-lucide="terminal" style="width: 28px; height: 28px;"></i></div>
+            <span class="tech-icon-name">Python</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS COUNTERS -->
+    <section id="achievements">
+      <div class="section-title-wrap">
+        <span class="section-label mono">09 // ACCOLADES</span>
+        <h2 class="section-title glow-gradient-text">Milestones Achieved</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="glass-card achievement-card">
+          <div class="hover-glow"></div>
+          <div class="achievement-icon-wrap">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="achievement-number" data-target="2">0</div>
+          <div class="achievement-label">Research Publications</div>
+          <div class="achievement-subtext">Smart Grid &amp; Web Security</div>
+        </div>
+
+        <div class="glass-card achievement-card">
+          <div class="hover-glow"></div>
+          <div class="achievement-icon-wrap">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <div class="achievement-number" data-target="2">0</div>
+          <div class="achievement-label">Academic Degrees</div>
+          <div class="achievement-subtext">Diploma &amp; B.Tech Degrees</div>
+        </div>
+
+        <div class="glass-card achievement-card">
+          <div class="hover-glow"></div>
+          <div class="achievement-icon-wrap">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <div class="achievement-number" data-target="11">0</div>
+          <div class="achievement-label">Security &amp; Tech Credentials</div>
+          <div class="achievement-subtext">NPTEL, Forage, &amp; Training Seals</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="section-title-wrap">
+        <span class="section-label mono">10 // HANDSHAKE</span>
+        <h2 class="section-title glow-gradient-text">Open Secure Terminal</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Need security consulting, infrastructural layouts, or system designs? Initialize a secure handshake. The
+            ports are open.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+              <div class="contact-text-box">
+                <h4>Encrypted Mail</h4>
+                <a href="mailto:dobariyanisarg@gmail.com" id="mail-link">dobariyanisarg@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+              <div class="contact-text-box">
+                <h4>Physical Location</h4>
+                <p>Gujarat, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/nisargdobariya" target="_blank" class="social-btn" id="social-linkedin"
+              aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/nisargdobariya" target="_blank" class="social-btn" id="social-github"
+              aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-github">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+            </a>
+            <a href="assets/Nisarg_Dobariya_Resume.pdf" class="social-btn" id="social-resume" aria-label="Download CV"
+              download>
+              <i data-lucide="file-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-card contact-form-wrap">
+          <div class="hover-glow"></div>
+          <form class="contact-form" id="secure-contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" name="name" class="form-control" placeholder=" " required
+                autocomplete="off">
+              <label for="form-name">Caller Identity (Name)</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="form-email" name="email" class="form-control" placeholder=" " required
+                autocomplete="off">
+              <label for="form-email">Handshake Address (Email)</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="form-msg" name="message" class="form-control" placeholder=" " required></textarea>
+              <label for="form-msg">Encrypted Message Payload</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;" id="btn-submit-form">
+              <span>Send Payload</span>
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+            </button>
+
+            <div class="form-submit-status success" id="status-success">
+              <i data-lucide="check-circle-2"></i>
+              <span>Handshake established successfully. Packet sent!</span>
+            </div>
+            <div class="form-submit-status error" id="status-error">
+              <i data-lucide="alert-triangle"></i>
+              <span>Handshake failed. Verify communication route.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-copy">
+        <span class="mono">&copy; 2026 NISARG DOBARIYA // ALL SYSTEMS OPERATIONAL</span>
+      </div>
+      <button class="footer-back-to-top" id="btn-back-to-top">
+        <span>sys_restore --top</span>
+        <i data-lucide="chevrons-up" style="width: 16px; height: 16px;"></i>
+      </button>
+    </footer>
+
+  </div>
+
+  <!-- Certificate Image Modal Preview -->
+  <div class="cert-modal" id="cert-lightbox">
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" id="btn-modal-close">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="cert-modal-img-wrap">
+        <img id="cert-modal-image" src="" alt="Full Certificate Image">
+      </div>
+      <div class="cert-modal-info">
+        <h4 class="cert-modal-title" id="cert-modal-title">Certificate Title</h4>
+        <span class="cert-modal-issuer" id="cert-modal-issuer">Issuer Name</span>
+        <div style="margin-top: 1.5rem;">
+          <a id="cert-modal-download" href="" class="btn btn-secondary mono"
+            style="padding: 0.6rem 1.8rem; font-size: 0.8rem;" download>
+            <i data-lucide="file-down" style="width: 14px; height: 14px;"></i>
+            <span>Download Official PDF</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN scripts: GSAP & ScrollTrigger, Lenis Smooth Scroll, Lucide Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom scripts -->
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/orbit-skills.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

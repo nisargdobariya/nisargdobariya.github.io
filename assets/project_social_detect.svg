@@ -1,0 +1,80 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508" />
+      <stop offset="100%" stop-color="#0b0b14" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bd00ff" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg)" />
+  <g stroke="rgba(255, 255, 255, 0.02)" stroke-width="1">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400 M 0,450 L 800,450" />
+    <path d="M 50,0 L 50,500 M 100,0 L 100,500 M 150,0 L 150,500 M 200,0 L 200,500 M 250,0 L 250,500 M 300,0 L 300,500 M 350,0 L 350,500 M 400,0 L 400,500 M 450,0 L 450,500 M 500,0 L 500,500 M 550,0 L 550,500 M 600,0 L 600,500 M 650,0 L 650,500 M 700,0 L 700,500 M 750,0 L 750,500" />
+  </g>
+
+  <!-- Title bar -->
+  <rect x="30" y="30" width="740" height="40" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+  <circle cx="50" cy="50" r="6" fill="#ff5f56" />
+  <circle cx="70" cy="50" r="6" fill="#ffbd2e" />
+  <circle cx="90" cy="50" r="6" fill="#27c93f" />
+  <text x="120" y="55" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="12">Social_ML_Classifier.py - Active Session</text>
+
+  <!-- Left Stats Panel -->
+  <rect x="30" y="90" width="220" height="380" rx="10" fill="rgba(10,10,12,0.6)" stroke="rgba(189,0,255,0.2)" />
+  <text x="50" y="130" fill="#bd00ff" font-family="sans-serif" font-weight="700" font-size="14" filter="url(#glow)">CLASSIFICATION MODEL</text>
+  
+  <text x="50" y="170" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="11">MODEL TYPE</text>
+  <text x="50" y="190" fill="#ffffff" font-family="monospace" font-size="13">Random Forest (Ensemble)</text>
+
+  <text x="50" y="230" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="11">ACCURACY INDEX</text>
+  <text x="50" y="255" fill="#00f0ff" font-family="sans-serif" font-weight="800" font-size="28" filter="url(#glow)">94.82 %</text>
+
+  <text x="50" y="300" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="11">CLASSIFIED PROFILES</text>
+  <text x="50" y="325" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="20">14,295</text>
+  
+  <text x="50" y="370" fill="rgba(255,255,255,0.4)" font-family="sans-serif" font-size="11">FLAGGED SPAMBOTS</text>
+  <text x="50" y="395" fill="#ff3366" font-family="sans-serif" font-weight="700" font-size="20">3,124</text>
+
+  <!-- Right Chart Panel -->
+  <rect x="270" y="90" width="500" height="380" rx="10" fill="rgba(10,10,12,0.6)" stroke="rgba(0,240,255,0.1)" />
+  <text x="290" y="130" fill="#00f0ff" font-family="sans-serif" font-weight="700" font-size="14" filter="url(#glow)">ROC DETECTION CURVE</text>
+
+  <!-- Chart Graphics -->
+  <g transform="translate(290, 160)">
+    <!-- Grid borders -->
+    <line x1="40" y1="20" x2="40" y2="240" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    <line x1="40" y1="240" x2="440" y2="240" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    
+    <!-- Y Axis Labels -->
+    <text x="30" y="25" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="end">1.0</text>
+    <text x="30" y="130" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="end">0.5</text>
+    <text x="30" y="240" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="end">0.0</text>
+
+    <!-- X Axis Labels -->
+    <text x="40" y="255" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">0.0</text>
+    <text x="240" y="255" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">0.5</text>
+    <text x="440" y="255" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9" text-anchor="middle">1.0</text>
+
+    <!-- Reference Diagonal -->
+    <line x1="40" y1="240" x2="440" y2="20" stroke="rgba(255,255,255,0.1)" stroke-dasharray="4,4" />
+
+    <!-- ROC Curve Plot -->
+    <path d="M 40,240 Q 60,70 120,40 T 440,20" fill="none" stroke="url(#purpleGlow)" stroke-width="3" filter="url(#glow)" />
+    
+    <!-- Pulse Highlight node -->
+    <circle cx="120" cy="40" r="5" fill="#00f0ff" />
+    <circle cx="120" cy="40" r="10" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.6">
+      <animate attributeName="r" values="5;15;5" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
