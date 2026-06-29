@@ -1566,12 +1566,10 @@ textarea.form-control {
 }
 
 .form-submit-status.success {
-  display: flex;
   color: #00ff66;
 }
 
 .form-submit-status.error {
-  display: flex;
   color: #ff3366;
 }
 
