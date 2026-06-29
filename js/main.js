@@ -236,7 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
       trigger: '.about-grid',
       start: 'top 75%'
     },
-    opacity: 0,
     y: 40,
     stagger: 0.15,
     duration: 0.8,
