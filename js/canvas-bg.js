@@ -14,6 +14,8 @@ class InteractiveBackground {
     this.scrollOffset = 0;
     this.maxParticles = 80;
     this.connectionDistance = 120;
+    this.isScrolling = false;
+    this.loopRunning = false;
     
     this.init();
     this.animate();
@@ -75,12 +77,31 @@ class InteractiveBackground {
       this.mouse.y = null;
     });
 
+    let scrollTimeout;
+    const isMobile = window.innerWidth < 768;
+
     window.addEventListener('scroll', () => {
       this.scrollOffset = window.scrollY;
+      
+      if (isMobile) {
+        this.isScrolling = true;
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          this.isScrolling = false;
+          if (!this.loopRunning) {
+            this.animate();
+          }
+        }, 100);
+      }
     });
   }
 
   animate() {
+    if (this.isScrolling && window.innerWidth < 768) {
+      this.loopRunning = false;
+      return;
+    }
+    this.loopRunning = true;
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     
     // Process and draw particles
