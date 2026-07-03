@@ -24,9 +24,11 @@ class InteractiveBackground {
     this.resize();
     this.particles = [];
     
-    // Scale particle count based on screen size
+    // Scale particle count based on screen size (optimized lightweight limits on mobile)
+    const isMobile = window.innerWidth < 768;
     const screenArea = this.canvas.width * this.canvas.height;
-    this.maxParticles = Math.min(Math.floor(screenArea / 18000), 120);
+    this.maxParticles = isMobile ? 15 : Math.min(Math.floor(screenArea / 18000), 120);
+    this.connectionDistance = isMobile ? 70 : 120;
     
     for (let i = 0; i < this.maxParticles; i++) {
       const size = Math.random() * 2 + 1;

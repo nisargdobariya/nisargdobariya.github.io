@@ -31,31 +31,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Initialize Lenis Smooth Scroll
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    orientation: 'vertical',
-    gestureOrientation: 'vertical',
-    smoothWheel: true,
-    wheelMultiplier: 1,
-    touchMultiplier: 2,
-    infinite: false,
-  });
+  // 2. Initialize Lenis Smooth Scroll (only on non-touch desktop screens for optimal native mobile scroll)
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth < 1024;
+  let lenis = null;
 
-  // Connect Lenis to requestAnimationFrame
-  function raf(time) {
-    lenis.raf(time);
+  if (!isTouchDevice) {
+    lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      infinite: false,
+    });
+
+    // Connect Lenis to requestAnimationFrame
+    const raf = (time) => {
+      if (lenis) lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
     requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
 
-  // Sync GSAP ScrollTrigger with Lenis
-  lenis.on('scroll', ScrollTrigger.update);
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
-  gsap.ticker.lagSmoothing(0);
+    // Sync GSAP ScrollTrigger with Lenis
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => {
+      if (lenis) lenis.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
+  }
 
   // 3. Custom Cursor & Glow Blob Follower
   const cursor = document.getElementById('custom-cursor');
@@ -503,11 +507,20 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(driftPhysics);
   }
 
+  // Back to top helper function (handles desktop Lenis and mobile native scroll)
+  const scrollToTop = () => {
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.5 });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   // Back to top button implementation
   const backToTop = document.getElementById('btn-back-to-top');
   if (backToTop) {
     backToTop.addEventListener('click', () => {
-      lenis.scrollTo(0, { duration: 1.5 });
+      scrollToTop();
     });
   }
 
@@ -516,7 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (logoBtn) {
     logoBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      lenis.scrollTo(0, { duration: 1.5 });
+      scrollToTop();
     });
   }
 

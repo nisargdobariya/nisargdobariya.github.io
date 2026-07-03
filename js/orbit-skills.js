@@ -76,6 +76,22 @@ class SkillsOrbit {
     
     this.init();
     this.bindEvents();
+    
+    // Setup intersection observer to pause updates when not visible
+    this.isVisible = true;
+    if ('IntersectionObserver' in window) {
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const wasVisible = this.isVisible;
+          this.isVisible = entry.isIntersecting;
+          if (this.isVisible && !wasVisible) {
+            this.animate();
+          }
+        });
+      }, { threshold: 0.05 });
+      this.observer.observe(this.canvas);
+    }
+    
     this.animate();
   }
 
@@ -227,6 +243,7 @@ class SkillsOrbit {
   }
 
   animate() {
+    if (!this.isVisible) return;
     this.rotateSphere();
     
     const rect = this.canvas.getBoundingClientRect();

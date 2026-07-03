@@ -1995,6 +1995,31 @@ body.light-theme .theme-toggle:hover {
   .certificates-grid {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important;
   }
+
+  /* Mobile performance optimization: Disable GPU-heavy backdrop-filters */
+  .glass-card, 
+  .floating-tech-icon,
+  header,
+  footer,
+  .btn-secondary {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  
+  /* Fallback solid backgrounds to compensate for lack of blur */
+  .glass-card {
+    background: rgba(10, 10, 12, 0.95) !important;
+  }
+  body.light-theme .glass-card {
+    background: #ffffff !important;
+  }
+  header {
+    background: rgba(5, 5, 5, 0.98) !important;
+  }
+  body.light-theme header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
 }
 
 .cert-modal-img-wrap img {
