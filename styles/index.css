@@ -743,7 +743,7 @@ nav a:hover::after {
   font-family: var(--font-mono);
   font-size: 2.5rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.35);
   line-height: 1;
 }
 
@@ -1765,6 +1765,10 @@ body.light-theme .project-desc {
 body.light-theme .about-card svg,
 body.light-theme .about-card i {
   color: #000000 !important;
+}
+
+body.light-theme .project-number {
+  color: rgba(0, 0, 0, 0.25) !important;
 }
 
 body.light-theme .form-submit-status.success {
